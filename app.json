@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "ConectaServ",
+    "slug": "conectaserv",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "conectaserv",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.conectaserv.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#1671F9"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "server"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permita que o ConectaServ acesse fotos e vídeos para detalhar pedidos e montar seu portfólio.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ],
+      "expo-font",
+      "expo-sharing",
+      "expo-splash-screen",
+      "expo-status-bar"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
